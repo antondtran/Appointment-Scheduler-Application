@@ -1,0 +1,5 @@
+module:com.example.appointmentscheduler
+com.example.appointmentscheduler
+com.example.appointmentscheduler.controller
+com.example.appointmentscheduler.dao
+com.example.appointmentscheduler.model

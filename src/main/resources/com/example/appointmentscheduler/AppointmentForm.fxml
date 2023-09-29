@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appointmentscheduler.controller.AppointmentController">
+   <children>
+      <DatePicker fx:id="startDatePicker" layoutX="220.0" layoutY="206.0" />
+      <ComboBox fx:id="startTimePicker" layoutX="405.0" layoutY="206.0" prefWidth="150.0" />
+      <DatePicker fx:id="endDatePicker" layoutX="220.0" layoutY="237.0" />
+      <Label layoutX="221.0" layoutY="14.0" text="Add Appointment" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="52.0" text="ID" />
+      <TextField fx:id="idTextField" layoutX="219.0" layoutY="47.0" />
+      <Label layoutX="188.0" layoutY="84.0" text="Title" />
+      <TextField fx:id="titleTextField" layoutX="219.0" layoutY="79.0" />
+      <Label layoutX="186.0" layoutY="117.0" text="Type" />
+      <TextField fx:id="typeTextField" layoutX="220.0" layoutY="112.0" />
+      <Label layoutX="155.0" layoutY="149.0" text="Description" />
+      <TextField fx:id="descriptionTextField" layoutX="220.0" layoutY="144.0" />
+      <Label layoutX="170.0" layoutY="179.0" text="Location" />
+      <TextField fx:id="locationTextField" layoutX="220.0" layoutY="174.0" />
+      <Label layoutX="130.0" layoutY="211.0" text="Start Date/Time" />
+      <Label layoutX="132.0" layoutY="242.0" text="End Date/Time" />
+      <ComboBox fx:id="endTimePicker" layoutX="405.0" layoutY="237.0" prefWidth="150.0" />
+      <Label layoutX="173.0" layoutY="304.0" text="User ID" />
+      <ComboBox fx:id="userPicker" layoutX="220.0" layoutY="299.0" />
+      <Label layoutX="145.0" layoutY="334.0" text="Customer ID" />
+      <TextField fx:id="customerTextField" layoutX="220.0" layoutY="329.0" />
+      <Button layoutX="412.0" layoutY="361.0" mnemonicParsing="false" text="Save" onAction="#saveBtn"/>
+      <Button fx:id="cancelBtn" layoutX="469.0" layoutY="361.0" mnemonicParsing="false" text="Cancel" onAction="#cancelBtn" />
+   </children>
+</Pane>
